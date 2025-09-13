@@ -136,6 +136,8 @@ celerybeat.pid
 
 # Environments
 .env
+.env.local
+.env.prod
 .envrc
 .venv
 env/
@@ -143,6 +145,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Google Cloud credentials
+credentials/
+service-account-*.json
 
 # Spyder project settings
 .spyderproject
