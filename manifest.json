@@ -1,0 +1,76 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.16",
+    "version": "1.0.0",
+    "id": "0040cbb9-e299-47bc-ac1f-b7e33879b6e7",
+    "packageName": "com.google.adk.weatherbot",
+    "developer": {
+        "name": "Your Organization",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/privacy",
+        "termsOfUseUrl": "https://www.example.com/terms"
+    },
+    "icons": {
+        "color": "color_icon.png",
+        "outline": "outline_icon.png"
+    },
+    "name": {
+        "short": "ADK Weather Bot",
+        "full": "Google ADK Weather and Traffic Bot"
+    },
+    "description": {
+        "short": "Get weather, time, and traffic information",
+        "full": "An AI-powered bot that provides real-time weather, time, and traffic information for any city. Powered by Google ADK agents."
+    },
+    "accentColor": "#4285F4",
+    "bots": [
+        {
+            "botId": "0040cbb9-e299-47bc-ac1f-b7e33879b6e7",
+            "scopes": [
+                "personal"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "weather",
+                            "description": "Get weather information for a city"
+                        },
+                        {
+                            "title": "time",
+                            "description": "Get current time for a city"
+                        },
+                        {
+                            "title": "traffic",
+                            "description": "Get traffic information for a city"
+                        },
+                        {
+                            "title": "help",
+                            "description": "Show available commands"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "*.run.app"
+    ],
+    "webApplicationInfo": {
+        "id": "0040cbb9-e299-47bc-ac1f-b7e33879b6e7",
+        "resource": "api://YOUR-CLOUD-RUN-URL.run.app/0040cbb9-e299-47bc-ac1f-b7e33879b6e7"
+    },
+    "defaultInstallScope": "personal",
+    "defaultGroupCapability": {
+        "conversations": "bot"
+    }
+}
