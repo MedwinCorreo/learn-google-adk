@@ -1,27 +1,17 @@
 # FastAPI and Web Framework
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-python-multipart==0.0.6
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-multipart>=0.0.6
 
 # Data Validation and Settings
-pydantic==2.5.0
-pydantic-settings==2.1.0
-python-dotenv==1.0.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
 
 # HTTP Client
-aiohttp==3.9.0
-httpx==0.25.2
+aiohttp>=3.8.0
 
 # Google Cloud and ADK
-google-cloud-logging==3.8.0
-google-auth==2.25.2
-google-adk==0.1.0
-
-# Teams Integration
-botframework-connector==4.14.0
-pymsteams==0.2.2
+google-adk>=0.1.0
 
 # Utilities
-python-jose[cryptography]==3.3.0
-cryptography==41.0.7
-pytz==2023.3
+pytz>=2023.3

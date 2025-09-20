@@ -4,7 +4,7 @@ steps:
     args: 
       - 'build'
       - '-t'
-      - 'gcr.io/$PROJECT_ID/weather-bot:$COMMIT_SHA'
+      - 'gcr.io/$PROJECT_ID/weather-bot:$BUILD_ID'
       - '-t'
       - 'gcr.io/$PROJECT_ID/weather-bot:latest'
       - '.'
@@ -13,7 +13,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: 
       - 'push'
-      - 'gcr.io/$PROJECT_ID/weather-bot:$COMMIT_SHA'
+      - 'gcr.io/$PROJECT_ID/weather-bot:$BUILD_ID'
 
   - name: 'gcr.io/cloud-builders/docker'
     args: 
@@ -27,7 +27,7 @@ steps:
       - 'deploy'
       - 'weather-bot'
       - '--image'
-      - 'gcr.io/$PROJECT_ID/weather-bot:$COMMIT_SHA'
+      - 'gcr.io/$PROJECT_ID/weather-bot:$BUILD_ID'
       - '--region'
       - 'us-central1'
       - '--platform'
@@ -50,7 +50,7 @@ steps:
 
 # Specify image to store build logs
 images:
-  - 'gcr.io/$PROJECT_ID/weather-bot:$COMMIT_SHA'
+  - 'gcr.io/$PROJECT_ID/weather-bot:$BUILD_ID'
   - 'gcr.io/$PROJECT_ID/weather-bot:latest'
 
 # Build configuration

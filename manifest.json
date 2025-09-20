@@ -58,19 +58,12 @@
             ]
         }
     ],
-    "permissions": [
-        "identity",
-        "messageTeamMembers"
-    ],
     "validDomains": [
-        "*.run.app"
+        "weather-bot-ebltc7kqua-uc.a.run.app"
     ],
-    "webApplicationInfo": {
-        "id": "0040cbb9-e299-47bc-ac1f-b7e33879b6e7",
-        "resource": "api://YOUR-CLOUD-RUN-URL.run.app/0040cbb9-e299-47bc-ac1f-b7e33879b6e7"
-    },
     "defaultInstallScope": "personal",
     "defaultGroupCapability": {
-        "conversations": "bot"
+        "team": "tab",
+        "groupchat": "tab"
     }
 }

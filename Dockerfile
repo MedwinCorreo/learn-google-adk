@@ -29,4 +29,4 @@ ENV PYTHONPATH=/app
 EXPOSE 8080
 
 # Run the application
-CMD uvicorn app:app --host 0.0.0.0 --port $PORT --workers 1
+CMD uvicorn main:app --host 0.0.0.0 --port $PORT --workers 1
